@@ -12,8 +12,8 @@ app.use(express.json());
 
 // Initialize Razorpay using secure environment variables
 const razorpay = new Razorpay({
-  key_id: process.env.rzp_live_Sq6e8vzaIoa4Vd,
-  key_secret: process.env.widZP0GEGcGKQRqQTbFD4pLl,
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_SECRET_KEY,
 });
 
 // The single endpoint your frontend will call to get an order ID
